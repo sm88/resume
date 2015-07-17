@@ -5,6 +5,7 @@
 \usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage{fontspec}
 \usepackage{textcomp}
+\usepackage{setspace}
 \newcommand{\header}[1]{
 \begin{center}
 \fbox{\begin{minipage}{\textwidth}
@@ -39,8 +40,8 @@
   Post Graduation & IIT Bombay & IIT Bombay & 2016 & 9.08 \\
   Undergraduate Specialization: CSE & & & & \\
   Graduation & JIIT(Deemed) & JIIT, Noida & 2011 & 7.7 \\
-  Intermediate/+2 & ICSE & St. Joseph's Academy, Dehradun & 2006 & 92.5\% \\
-  Matriculation & ICSE & St. Joseph's Academy, Dehradun & 2004 & 89\% \\
+  Intermediate/+2 & CISCE & St. Joseph's Academy, Dehradun & 2006 & 92.5\% \\
+  Matriculation & CICSE & St. Joseph's Academy, Dehradun & 2004 & 89\% \\
   \hline
   \end{tabular}
 \end{table}
@@ -80,17 +81,47 @@ Cryptography, Cloud computing, Software Architecture
  \item \textbf{Module 4-Internal:} This work was aimed at reducing the time required for preparing a new Environment, so that it may run the application and JUnit test cases, from a few weeks to a few hours. It helps a developer/tester to load appropriate data required into the DB. This data includes terminology codes, constants, ids, names, profile options and even XML template files. It can be compared to a class loader in JAVA. \\
  \textbf{Responsibilities:} Create user stories, Analysis of codes, implementation, review, documentation, testing.
 \end{itemize}
-\textbf{Technologies:} JAVA SE-6(Core), Swing, XML, Oracle, HTB DB Framework, Design Patterns, SONAR Quality tool, UISpec4J UI testing tool, QAPlug source code quality, SVN.
+\textbf{Technologies/Tools:} JAVA SE-6(Core), Swing, XML, Oracle, HTB DB Framework, Design Patterns, SONAR Quality tool, UISpec4J UI testing tool, QAPlug source code quality, SVN.
 }
 
 \vspace{-0.4cm}
 \header{Post Graduate Research/Projects}
 \vspace{0.2cm}
+\begingroup
+\linespread{0.5}
 \textbf{Homomorphic Cryptography with applications in OR -} \emph{M.Tech. Thesis}\hfill[Autumn 2015 - present] \\
 \emph{Guide: Prof. Bernard Menezes}
 \begin{itemize}
- \item Goal: To implement a solution which enables PKE based evaluation of functions on encrypted text such that the result of the decryption gives the correct result. This has wide applications in machine learning and image processing. We wish to apply this to the predicting the inventory needs based on encrypted past data.
+ \item Goal: To implement a solution which enables PKE based evaluation of functions on encrypted text such that the result of the decryption gives the correct result. This has wide applications in machine learning and image processing. Our application is to predict the inventory needs based on encrypted past data.
 \end{itemize}
 
+\noindent
+\textbf{Homomorphic Cryptography -} \emph{M.Tech. Seminar}\hfill[Spring 2014] \\
+\emph{Guide: Prof. Bernard Menezes}
+\begin{itemize}
+ \item Goal: Survey various techniques that allow homomorphic encryption of data fully as well as partially. The relative efficacy of the techniques and the practicality of the implementation was also researched.
+\end{itemize}
+
+\noindent
+\textbf{Cloud based memcache clone -} \emph{Course Project}\hfill[Spring 2014] \\
+\emph{Guide: Prof. Sriram Srinivasan}
+\begin{itemize}
+ \item Goal: The memcache supports basic atomic instructions like set, get, cas for key value pairs. 5 servers maintain a replicated memcache table. The servers are cemented together with a RAFT based consensus algorithm.
+ \item Technologies/Tools: Google go, git, lite IDE
+\end{itemize}
+
+\noindent
+\textbf{QT based SpecRTL  visualizer -} \emph{Course Project}\hfill[Spring 2013] \\
+\emph{Guide: Prof. Sriram Srinivasan}
+\begin{itemize}
+ \item Goal: SpecRTL is a language for machine descriptions. Although easy to write it is very difficult to visualize the structures. We wrote a Qt based tool which takes as input the specRTL code and produces a tree based graphic output.
+ \item Technologies/Tools: C/C++, Qt developer kit, specRTL
+\end{itemize}
+\endgroup
+
+\header{RA Work - System Administrator}
+\begin{itemize}
+ \item 
+\end{itemize}
 
 \end{document}
