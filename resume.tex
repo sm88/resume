@@ -2,11 +2,23 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{multirow}
-\usepackage[left=0.75in,right=1in,top=0.75in,bottom=1in]{geometry}
+\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{textcomp}
+\newcommand{\header}[1]{
+\begin{center}
+\fbox{\begin{minipage}{\textwidth}
+\raggedright \large \bf #1
+\end{minipage}}
+\end{center}
+\vspace{-0.3cm}
+}
 
 \begin{document}
+\setmainfont{Ubuntu}
 \begingroup
 \setlength{\tabcolsep}{0.05\textwidth}
+
 \begin{table}[h!]
  \centering
  \begin{tabular}{l l l}
@@ -28,10 +40,48 @@
   Undergraduate Specialization: CSE & & & & \\
   Graduation & JIIT(Deemed) & JIIT, Noida & 2011 & 7.7 \\
   Intermediate/+2 & ICSE & St. Joseph's Academy, Dehradun & 2006 & 92.5\% \\
-  Matriculation & ICSE & St. Joseph's Academy, Dehradun & 2004 & 89\% \\ 
+  Matriculation & ICSE & St. Joseph's Academy, Dehradun & 2004 & 89\% \\
+  \hline
   \end{tabular}
 \end{table}
 
+\vspace{-1cm}
+\header{Awards and Achievements}
+\vspace{-0.3cm}
+\begin{itemize}
+ \item Secured rank of \textbf{440/224160} in \textbf{GATE 2013}.
+ \item Worked for \textbf{CSC India Pvt. Ltd., Noida} for 2 years.
+ \item \textbf{Oracle\textregistered ~Certified Professional} JAVA SE 6 Programmer. Cleared OCP-JP 6, 2014 with 90\%.
+ \item \textbf{Microsoft\textregistered ~Specialist}: Programming in HTML5 with JavaScript and CSS3. Cleared the certification with 76\%.
+ \item Secured \textbf{6/150} in college's annual computer science conference \textbf{IC3} for the project \textbf{Voice controlled obstacle detector}.
+ \item Participated in \textbf{ACM} Kanpur, and received certificate of achievement.
+ \item 1\textsuperscript{st} in \textbf{C++} programming contest in college's annual fest JIVE 2009. 
+\end{itemize}
 
+\vspace{-1cm}
+\header{Fields of Interest}
+Cryptography, Cloud computing, Software Architecture
+
+\vspace{-0.4cm}
+\header{Industry Experience}
+\noindent{Worked on a release based project in Healthcare domain for a Denmark based client. The software is used by clinicians at hospitals (healthcare is completely under government control in Denmark, hence all hospitals use it). The project is used to document and co-ordinate all activities related to the treatment of a patient. I worked on 3 external and 1 internal modules of the project.
+\begin{itemize}
+ \item \textbf{Module 1:} Enables \textbf{creation, saving and editing of RTF text} in admin application and provide the API for the usage of the text in the main client module. \\
+ \textbf{Responsibilities:} Technical design, implementation, testing.
+ 
+ \item \textbf{Module 2:} Did work relating to extendability of the module by changing the core design patterns. \\
+ \textbf{Responsibilities:} Technical design, POC for design patterns, implementation, testing.
+ 
+ \item \textbf{Module 3:} Extended list based design to include working with multiple items. Extension of module 2. \\
+ \textbf{Responsibilities:} Implementation, testing.
+ 
+ \item \textbf{Module 4-Internal:} This work was aimed at reducing the time required for preparing a new Environment, so that it may run the application and JUnit test cases, from a few weeks to a few hours. It helps a developer/tester to load appropriate data required into the DB. This data includes terminology codes, constants, ids, names, profile options and even XML template files. It can be compared to a class loader in JAVA. \\
+ \textbf{Responsibilities:} Create user stories, Analysis of codes, implementation, review, documentation, testing.
+\end{itemize}
+\textbf{Technologies:} JAVA SE-6(Core), Swing, XML, Oracle, HTB DB Framework, Design Patterns, SONAR Quality tool, UISpec4J UI testing tool, QAPlug source code quality, SVN.
+}
+
+\vspace{-0.5cm}
+\header{Post Graduate Projects}
 
 \end{document}
