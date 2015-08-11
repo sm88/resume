@@ -1,0 +1,2 @@
+#! /bin/bash
+java -jar ResumeGenerator.jar "Sushant Mahajan" 133059007 "Computer Science & Engineering" "M.Tech." "Indian Institute of Technology Bombay" Male "" "28th Nov, 1988" "Post Graduation;IIT Bombay;IIT Bombay;2016;9.08" "Undergraduate Specialization: Computer Science & Engineering" "Graduation;Jaypee Institute of Information Technology, Noida;Jaypee Institute of Information Technology, Noida;2011;7.7" "Intermediate/+2;CISCE;St. Joseph's Academy, Dehradun;2006;92.5%" "Matriculation;CISCE;St. Joseph's Academy, Dehradun;2004;89%"
