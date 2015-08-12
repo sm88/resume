@@ -1,0 +1,136 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{textcomp}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\newcommand{\header}[1]{
+\begin{center}
+\fbox{\begin{minipage}{\textwidth}
+\raggedright \large \bf #1
+\end{minipage}}
+\end{center}
+\vspace{-0.3cm}
+}
+\pagestyle{empty}
+\setlist{nolistsep}
+\begin{document}
+\setmainfont{Ubuntu}
+\begingroup
+%\setlength{\tabcolsep}{0.05\textwidth}
+
+% \begin{table}[h!]
+%  \centering
+%  \begin{tabular}{l l l}
+%  \hspace{-1cm}\multirow{4}{0.2\textwidth}{\includegraphics{images/logo}} & \bf Sushant Mahajan & \bf 133059007 \\
+%  & \bf Computer Science \& Engineering & \bf M.Tech. \\
+%  & \bf Indian Institute of Technology, Bombay & \bf Male \\
+%  & & \bf DOB: 28 Nov 1988 \\  
+%  \end{tabular}
+% \end{table}
+% \endgroup
+% 
+% \begin{table}[h!]
+%   \centering
+%   \begin{tabular}{l l l l l}
+%   \hline
+%   \bf Examination & \bf University & \bf Institute & \bf Year & \bf CPI/\% \\
+%   \hline
+%   Post Graduation & IIT Bombay & IIT Bombay & 2016 & 9.08 \\
+%   Undergraduate Specialization: CSE & & & & \\
+%   Graduation & JIIT(Deemed) & JIIT, Noida & 2011 & 7.7 \\
+%   Intermediate/+2 & CISCE & St. Joseph's Academy, Dehradun & 2006 & 92.5\% \\
+%   Matriculation & CISCE & St. Joseph's Academy, Dehradun & 2004 & 89\% \\
+%   \hline
+%   \end{tabular}
+% \end{table}
+
+\vspace*{2.0in}
+\vspace*{-1.5cm}
+\header{Awards and Achievements}
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Secured percentile of \textbf{99.81 amongst 224160} students in \textbf{GATE 2013}.
+ \item \textbf{Oracle\textregistered ~Certified Professional} JAVA SE 6 Programmer. Cleared OCP-JP 6, 2014 with 90\%.
+ \item \textbf{Microsoft\textregistered ~Specialist} in programming in HTML5 with JavaScript and CSS3, 2012. Cleared the certification with 76\%.
+ \item Secured rank of \textbf{6 in 200} students in college's annual computer science conference \textbf{IC3, 2010} for the project \textbf{Voice controlled obstacle detector}.
+\end{itemize}
+
+\vspace*{-0.5cm}
+\header{Industry Experience - 24 months}
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Worked on a project in Healthcare domain for a Denmark based client, in a team of 13. The software is used by clinicians at hospitals in Denmark, where healthcare is mostly public.
+ \item Delivered 3 external and 1 internal module for the project and was involved in all aspects of SDLC.\\
+ \textbf{Technologies/Tools:} JAVA SE-6(Core), Swing, XML, Oracle, SVN, Intellij Idea.
+\end{itemize}
+
+\vspace*{-0.6cm}
+\header{MTech Courses}
+Program Analysis, Network Security and Cryptography II, Natural Language Processing, Software  Architecture, Computer Networks, Engineering a Cloud, Introduction to Number Theory and Cryptography
+
+\vspace*{-0.5cm}
+\header{Post Graduate Research/Projects}
+\vspace*{0.1cm}
+\begingroup
+%\linespread{0.5}
+\textbf{Homomorphic Encryption Over Vectors with application to SCM -} \emph{M.Tech. Thesis}\hfill[Autumn 2015 - present]
+\emph{Guide: Prof. Bernard Menezes}
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Implement Zhou's scheme for efficient homomorphic encryption over 
+integer vectors and improve performance by making use of multiple cores and multiprocessing.
+ \item Apply the above solution to predict inventory needs based past data which would be homomorphically encrypted.
+\end{itemize}
+
+\noindent
+\textbf{Homomorphic Cryptography -} \emph{M.Tech. Seminar}\hfill[Spring 2014]
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Survey various techniques that allow homomorphic encryption of data fully or partially. The relative efficacy of the techniques and the practicality of the implementation was also researched.
+\end{itemize}
+
+\noindent
+\textbf{Cloud based memcache clone -} \emph{Course Project}\hfill[Spring 2014]
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Goal: 5 servers maintain a replicated memcache table. The servers are cemented together with a RAFT based consensus algorithm. Built using golang.
+\end{itemize}
+
+\noindent
+\textbf{Emotion detection from live chat -} \emph{Course Project}\hfill[Autumn 2014]
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Goal: Develop a system to analyze data from a text based chat, and as an output display the predicted emotion portrayed. This was a python based project in which we extensively used the nltk library.
+\end{itemize}
+
+\noindent
+\textbf{QT based SpecRTL  visualizer -} \emph{Course Project}\hfill[Spring 2013]
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item SpecRTL is an easy to write yet difficult to visualize machine description language. A Qt based tool was developed which takes as input the specRTL code and produces a tree based graphic output.
+\end{itemize}
+\endgroup
+
+\vspace{-0.5cm}
+\header{RA Work - System Administrator}
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item Deployed printer bank and print accounting solution.
+ \item Deployed iSCSI based filesystem that is used by all lab machines via NFS.
+ \item Configured department servers with IPMI for low level management and emergency maintenance.
+ \item Established the FOG server for automated creation and deployment of OS images on all lab systems.
+\end{itemize}
+
+\vspace{-0.5cm}
+\header{Skills}
+\begin{itemize}
+\setlength\itemsep{0em}
+ \item \textbf{Languages/Scripting}: C/C++, JAVA(Core), golang, Python, bash, HTML5, PHP, JSP/Servlet
+ \item \textbf{Tools}: gnuplot, \LaTeX, git, vim, Eclipse
+\end{itemize}
+\end{document}
