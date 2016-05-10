@@ -1,0 +1,162 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{textcomp}
+\usepackage{setspace}
+\newcommand{\header}[1]{
+\begin{center}
+\fbox{\begin{minipage}{\textwidth}
+\raggedright \large \bf #1
+\end{minipage}}
+\end{center}
+\vspace{-0.3cm}
+}
+\pagestyle{empty}
+\begin{document}
+\setmainfont{Ubuntu}
+\begingroup
+\setlength{\tabcolsep}{0.05\textwidth}
+\begin{table}[h!]
+ \centering
+ \begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+ \hspace{-0.6cm}\bf Sushant Mahajan & \hspace{0.5cm}\bf Computer Science \& Engineering \\
+ & \hspace{0.5cm}\bf MTech, IIT Bombay \\
+ \hspace{-0.6cm}\textbf{Email:} sushant.mahajan88@gmail.com & \\
+ \hspace{-0.6cm}\textbf{Phone:} 7506112001 & \\ 
+ \end{tabular}
+\end{table}
+\endgroup
+\vspace*{-1cm}
+\header{Academic details}
+\vspace*{-0.2cm}
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{l l l l l}
+  \hspace*{-0.22cm}\bf Examination & \bf University & \bf Institute & \bf Year & \bf CPI/\% \\
+  \hspace*{-0.22cm}Post Graduation & IIT Bombay & IIT Bombay & 2016 & 9.05 \\
+  \hspace*{-0.22cm}Undergraduate Specialization: CSE & & & & \\
+  \hspace*{-0.22cm}Graduation & JIIT, Noida & Jaypee Institute of Information Technlogy & 2011 & 7.7 \\
+  \hspace*{-0.22cm}Intermediate/+2 & CISCE & St. Joseph's Academy, Dehradun & 2006 & 92.5\% \\
+  \hspace*{-0.22cm}Matriculation & CISCE & St. Joseph's Academy, Dehradun & 2004 & 89\% \\
+  \end{tabular}
+\end{table}
+
+% \vspace*{2.4in}
+ \vspace{-0.8cm}
+\header{Awards and Achievements}
+\vspace{-0.2cm}
+\begin{itemize}
+ \item Secured percentile of \textbf{99.81 amongst 224160} students in \textbf{GATE 2013}.
+ \item Participated in \textbf{Microsoft code.fun.do}, 2016.
+ \item Ranked \textbf{6\textsuperscript{th} of 2500} candidates in HP Hack-a-thon, Hackerearth 2015.
+ \item Part of team to reach \textbf{semi-finals} in Hackerrank Worldcup, 2015.
+ \item \textbf{Oracle\textregistered ~Certified Professional} JAVA SE 6 Programmer. Cleared OCP-JP 6, 2014 with 90\%.
+ \item \textbf{Microsoft\textregistered ~Specialist} in programming in HTML5 with JavaScript and CSS3, 2012. Cleared the certification with 76\%.
+ \item Ranked \textbf{6\textsuperscript{th} of 200} students in college's annual computer science conference \textbf{IC3, 2010} for the project \textbf{Voice controlled obstacle detector}.
+\end{itemize}
+
+\vspace{-0.8cm}
+\header{Fields of Interest}
+\vspace{0.2cm}
+Cryptography, Cloud computing, Software Architecture, Machine Learning
+
+\vspace{-0.4cm}
+\header{Key MTech Courses}
+\vspace{-0.2cm}
+\begin{table}[H]
+ \begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+  Machine Learning & Network Security and Cryptography II\\
+  Natural Language Processing & Software  Architecture\\
+  Computer Networks & Design and Implementation of GCC Framework\\
+  Engineering a Cloud & Number Theory and Cryptography
+ \end{tabular}
+\end{table}
+\vspace{-1cm}
+\header{Post Graduate Research/Projects}
+\vspace{0.2cm}
+\begingroup
+\linespread{0.5}
+\textbf{Homomorphic Encryption Over Vectors with applications -} \emph{M.Tech. Thesis}\hfill[Autumn 2015 - present] \\
+\emph{Guide: Prof. Bernard Menezes}
+\begin{itemize}
+ \item Goal: Implement Zhou's scheme for efficient homomorphic encryption over integer vectors and analyse, verify and validate the results. (Phase 1)\\
+Apply the above solution to solve some basic linear algebra, algorithmic and statistical problems in encrypted domain. (Phase 2)
+\end{itemize}
+
+\noindent
+\textbf{Emotion detection from text -} \emph{Course Project}\hfill[Spring 2016] \\
+\emph{Guide: Prof. Ganesh Ramakrishnan}
+\begin{itemize}
+ \item Goal: Develop a system to analyze data from given dataset and predict emotions for test data. We used the ISEAR emotion annotated dataset for training and Semeval dataset for testing. The input sentence was converted to a weight vector using \textbf{tf-idf} technique, which were then used as inputs to the models.\\
+ Emotions were classified into 3 categories - \textbf{anger, sadness, joy}. We fitted the data into 3 models - \textbf{vector space model, gaussian naive bayes, svm}. \\Our experiments revealed GNB to outperform the rest. The accuracy was close to 40\% for all models. We also did sentiment analysis on the test data with accuracy 66\%. Apart from model building extensive feature engineering was done.
+ \item Technologies/Tools: Python3, Tkinter, bash, ISEAR, weka, sklearn
+\end{itemize}
+
+\noindent
+\textbf{Prediction and classification -} \emph{Mini Course projects}\hfill[Spring 2016] \\
+\emph{Guide: Prof. Ganesh Ramakrishnan}
+\begin{itemize}
+ \item Goal: These were 2 projects in which we did extensive feature engineering for given datasets and then did prediction and classification, respectively. We played with \textbf{Linear, Lasso, Support vector regression for prediction} and wrote from scratch a \textbf{neural network} for prediction. Prediction was for bike demand and classification for spam.
+  \item Technologies/Tools: Python3, sklearn, bash, weka
+\end{itemize}
+
+\noindent
+\textbf{Homomorphic Cryptography -} \emph{M.Tech. Seminar}\hfill[Spring 2014] \\
+\emph{Guide: Prof. Bernard Menezes}
+\begin{itemize}
+ \item Goal: Survey various techniques that allow homomorphic encryption of data fully or partially. The relative efficacy of the techniques and the practicality of the implementation was also researched.
+\end{itemize}
+
+\noindent
+\textbf{Cloud based memcache clone -} \emph{Course Project}\hfill[Spring 2014] \\
+\emph{Guide: Prof. Sriram Srinivasan}
+\begin{itemize}
+ \item Goal: The memcache supports basic atomic instructions like set, get, cas for key value pairs. 5 servers maintain a replicated memcache table. The servers are cemented together with a RAFT based consensus algorithm.
+ \item Technologies/Tools: Google go, git, lite IDE
+\end{itemize}
+\endgroup
+
+\vspace{-0.5cm}
+\header{RA Work - System Administrator}
+\begin{itemize}
+ \item Wrote web interface and php back-end for automatic video conversion using bash scripts run via cron.
+ \item Wrote scripts for automatic software installation, iptables manipulation and regular lab maintenance.
+ \item Established the FOG server for automated creation and deployment of OS images on all lab systems.
+ \item Deployed printer bank and wrote the web interface for printing documents.
+ \item Wrote scripts and programs for creating a printer accounting solution.
+ \item Deployed iSCSI based filesystem that is used by all lab machines via NFS.
+ \item Configured department servers with IPMI for low level management and emergency maintenance.
+\end{itemize}
+\vspace{-0.4cm}
+\header{Industry Experience - 24 months}
+\vspace{0.25cm}
+\noindent{Worked as \textbf{ASE at CSC India Pvt. Ltd., Noida}. My project was in Healthcare domain, in a team of 13. The software is used by clinicians at hospitals in Denmark, where healthcare is mostly public. Objective is to document and co-ordinate all activities related to treatment of a patient. I worked on 4 modules.
+\begin{itemize}
+ \item \textbf{Module 1:} Enables \textbf{creation, saving and editing of RTF text} in admin application and provide the API for the usage of the text in the main client module. \\
+ \textbf{Responsibilities:} Technical design, implementation, testing.
+ 
+ \item \textbf{Module 2:} Did work relating to extendability of the module by changing the core design patterns. \\
+ \textbf{Responsibilities:} Technical design, POC for design patterns, implementation, testing.
+ 
+ \item \textbf{Module 3:} Extended list based design to include working with multiple items. Extension of module 2. \\
+ \textbf{Responsibilities:} Implementation, testing.
+ 
+ \item \textbf{Module 4-Internal:} Aimed at reducing the time required for preparing a new Environment to run the application and JUnit test cases on it, from a few days to a few hours. \\
+ \textbf{Responsibilities:} Create use cases, Analysis of codes, implementation, review, documentation, testing.
+\end{itemize}
+\textbf{Technologies/Tools:} JAVA SE-6(Core), Swing, XML, Oracle, HTB DB Framework, Design Patterns, SONAR Quality tool, UISpec4J UI testing tool, QAPlug source code quality, SVN.
+
+\vspace{-0.4cm}
+\header{Skills}
+%\vspace{0.1cm}
+\begin{itemize}
+ \item \textbf{Languages:} C/C++, JAVA 6(Core), Google Go, Python, bash
+ \item \textbf{OS:} GNU/Linux (Ubuntu, Debian)
+ \item \textbf{Web technologies:} HTML5, CSS3, JavaScript, PHP, JSP, Servlets, Bootstrap, JSON
+ \item \textbf{Tools:} gnuplot, \LaTeX, git, vim, Eclipse
+ \item \textbf{Database:} MySql
+\end{itemize}
+\end{document}
